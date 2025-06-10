@@ -9,13 +9,17 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('neerslag', function (Blueprint $table) {
             $table->id();
+            $table->integer('jaar');
+            $table->string('maand');
+            $table->float('mm');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
