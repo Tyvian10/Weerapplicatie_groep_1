@@ -13,7 +13,7 @@
 
     <form method="POST" action="{{ route('neerslag.store') }}">
         @csrf
-f
+
         <label for="jaar">Jaar:</label>
         <input type="number" name="jaar" min="2005" max="2024" value="{{ old('jaar') }}" required><br>
 
